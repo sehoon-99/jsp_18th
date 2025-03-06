@@ -39,11 +39,11 @@
 					<div class="mr-5"></div>
 					<ul class="navbar-nav">
 						<li class="ml-1 nav-item"><p
-							class="nav-link h5 font-weight-bold pt-3">온에어 </p></li>
+								class="nav-link h5 font-weight-bold pt-3">온에어</p></li>
 						<li class="ml-1 nav-item"><p
-							class="nav-link h5 font-weight-bold pt-3">뉴스 </p></li>
+								class="nav-link h5 font-weight-bold pt-3">뉴스</p></li>
 						<li class="ml-1 nav-item"><p
-							class="nav-link h5 font-weight-bold pt-3">방송 </p></li>
+								class="nav-link h5 font-weight-bold pt-3">방송</p></li>
 
 						<c:choose>
 							<c:when test="${sessionId eq 'admin'}">
@@ -52,10 +52,10 @@
 										등록</a></li>
 							</c:when>
 						</c:choose>
-							<li class="d-md-none d-lg-none d-xl-none d-block ml-1 nav-item"><a
+						<li class="d-md-none d-lg-none d-xl-none d-block ml-1 nav-item"><a
 							class="nav-link h5 font-weight-bold pt-3" href="addReport.jsp">제보</a></li>
 						<li class="d-md-none d-lg-none d-xl-none d-block ml-1 nav-item"><a
-							class="nav-link h5 font-weight-bold pt-3"href="Reports.jsp">게시판</a></li>
+							class="nav-link h5 font-weight-bold pt-3" href="Reports.jsp">게시판</a></li>
 					</ul>
 				</div>
 
@@ -71,12 +71,12 @@
 								<li class="nav-item "><a
 									class="nav-link p font-weight pt-3 ml-1" href="#"
 									onclick="logout()">로그아웃 </a></li>
-									<li class="nav-item "><a
-									class="nav-link p font-weight pt-3 ml-1" href="updateMember.jsp"
-									>내 정보 </a></li>
+								<li class="nav-item "><a
+									class="nav-link p font-weight pt-3 ml-1"
+									href="updateMember.jsp">내 정보 </a></li>
 							</c:otherwise>
 						</c:choose>
-						<div id="search" class="dropleft ml-1 mt-2"> 
+						<div id="search" class="dropleft ml-1 mt-2">
 							<button class="btn" type="button" data-toggle="dropdown"
 								aria-expanded="false">
 								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="16"
@@ -85,25 +85,25 @@
 										d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                             </svg>
 							</button>
-								
+
 							<div class="dropdown-menu">
 								<form action="searchNews.jsp" class="form-inline">
-									<input class="form-control ml-1" name='search' placeholder="뉴스 검색"
-										type="search" aria-label="Search">
+									<input class="form-control ml-1" name='search'
+										placeholder="뉴스 검색" type="search" aria-label="Search">
 									<button class="btn btn-primary" type="submit">검색</button>
 								</form>
-							
+
 							</div>
 						</div>
-						
+
 					</ul>
 				</div>
-			
+
 				<div class="offset-xl-4 offset-xl-2">
 					<div class="col mx-4 d-none d-xl-block d-lg-block"></div>
 				</div>
 			</div>
-		
+
 		</nav>
 	</div>
 
@@ -145,14 +145,19 @@
 	<hr class="m-0 p-0" />
 	<div class="container-fluid mb-2">
 		<div class="row mt-2" id="second-menu">
+			<div class="col-1 d-block d-md-none d-lg-none d-xl-none"></div>
+			<div class="col-1 d-none d-sm-block d-md-none d-lg-none d-xl-none"></div>
 			<nav class="offset-xl-2 offset-xl-1 nav mr-auto">
-				<a class="nav-link" href="index.jsp">뉴스홈</a> <a class="nav-link ml-n3"
-					href="./news.jsp?title=정치">분야별 뉴스</a> 
-					<a class="nav-link ml-n3" href="./new.jsp">최신뉴스</a>
+					<a class="nav-link" href="index.jsp">뉴스홈</a> <a
+						class="nav-link ml-n3" href="./news.jsp?title=정치">분야별 뉴스</a> <a
+						class="nav-link ml-n3" href="./new.jsp">최신뉴스</a>
 			</nav>
-			<nav id="community" class="nav ml-auto">
-				<a class="d-none d-xl-block d-lg-block d-md-block nav-link border mr-2" href="addReport.jsp">제보</a> <a
-					class="d-none d-xl-block d-lg-block d-md-block nav-link border mr-1" href="Reports.jsp">게시판</a>
+			<nav id="community" class="nav ml-auto ">
+				<a
+					class="d-none d-xl-block d-lg-block d-md-block nav-link border mr-2"
+					href="addReport.jsp">제보</a> <a
+					class="d-none d-xl-block d-lg-block d-md-block nav-link border mr-1"
+					href="Reports.jsp">게시판</a>
 			</nav>
 			<div
 				class="offset-xl-1 offset-xl-1 mr-5 d-xl-block d-lg-block d-md-none ">
