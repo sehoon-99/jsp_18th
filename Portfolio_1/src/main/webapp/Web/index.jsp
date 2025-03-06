@@ -120,7 +120,7 @@
 				<div class="row mb-1">
 					<c:forEach var="row3" items="${recently3.rows }" varStatus="status">
 
-						<div class="col-lg-6 col-md-6 mt-5 d-none d-md-block ">
+						<div class="col-lg-6 col-md-6 mt-5 d-none d-md-block border-bottom">
 							<a class=" text-body"
 								href="./newsView.jsp?id=${row3.id }&title=${row3.category}">
 								<img class="img-fluid rounded"
@@ -144,7 +144,7 @@
 						<a class=" text-body "
 							href="./newsView.jsp?id=${row4.id }&title=${row4.category}">
 							<li
-							class="list-group-item border-left-0 border-right-0 border-bottom-0">
+							class="list-group-item border-left-0 border-right-0 border-top-0">
 								<span class="text-danger">[단독]</span>${row4.title }
 						</li>
 						</a>
