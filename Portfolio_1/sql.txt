@@ -15,17 +15,8 @@ create table reportsDB(
 --시퀀스 생성
 create sequence r_id nocycle nocache;
 
-drop sequence r_id;
-
 insert into reportsDB values(r_id.nextval,'010-6389-8063','제보합니다!','저희 OO고등학교 교사의 비리를 고발합니다.','r1.png',null,null,sysdate);
 
-select * from reportsDB;
-
-select * from reportsDB where id=1;
-
-drop table reportsDB;
-
-desc reportsDB;
 
 commit;
 
@@ -42,8 +33,6 @@ create table newsDB(
 );
 
 create sequence n_id nocycle nocache;
-
-drop sequence n_id;
 
 insert into newsDB values(n_id.nextval,'일본도 살인사건 피의자, 1심 선고날 구치소 출정 거부',
 '
@@ -266,35 +255,6 @@ insert into newsDB values(n_id.nextval,'손흥민, EPL 역대 11번째 "70골-70
 "80골-80도움"… EPL 역사상 6명만 기록.',
 '00000268586820250224132038676.jpeg','스포츠',sysdate);
 
-drop table newsDB;
-
-select * from newsDB;
-select * from newsDB where id=6;
-
-select * from newsDB where Category='사회' order by updatetime desc;
-
-SELECT * FROM newsDB WHERE Category = '사회' ORDER BY updatetime DESC FETCH FIRST 2 ROWS ONLY;
-
-
-delete newsDB where id=17;
-
-rollback;
-
-delete from b_member where id='123';
-
-SELECT * FROM newsDB ORDER BY updatetime DESC FETCH FIRST 1 ROWS ONLY;
-
-SELECT * FROM newsDB ORDER BY updatetime DESC FETCH NEXT 1 ROWS ONLY OFFSET 1 ROWS;
-
-SELECT * FROM (SELECT * FROM newsDB ORDER BY updatetime DESC) WHERE ROWNUM <= 3;
-
-SELECT * FROM (SELECT *, ROW_NUMBER() OVER (ORDER BY updatetime DESC) AS row_num FROM newsDB) WHERE row_num BETWEEN 2 AND 5;
-
-SELECT * FROM (SELECT newsDB.*, ROW_NUMBER() OVER (ORDER BY updatetime DESC) AS row_num FROM newsDB) WHERE row_num BETWEEN 2 AND 5;
-
-
-commit;
-
 
 
 
@@ -317,13 +277,9 @@ create table p_memberDB(
 --시퀀스 생성
 create sequence p_mem_num nocycle nocache;
 
-drop sequence p_mem_num;
+
     
 insert into p_memberDB values('admin','1234','김세훈','남성','1999-03-06','tpgns199@naver.com',
 '010-6389-8063','서울시','2025-02-14',p_mem_num.nextval,sysdate,sysdate);
-
-select * from p_memberDB;
-
-drop table p_memberDB;
 
 commit;
