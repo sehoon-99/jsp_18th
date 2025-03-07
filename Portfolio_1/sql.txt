@@ -18,7 +18,7 @@ create sequence r_id nocycle nocache;
 insert into reportsDB values(r_id.nextval,'010-6389-8063','제보합니다!','저희 OO고등학교 교사의 비리를 고발합니다.','r1.png',null,null,sysdate);
 
 
-commit;
+
 
 
 -------------------------------------포토폴리오 뉴스db-------------------------------------
@@ -274,6 +274,7 @@ create table p_memberDB(
     logtime date,
     updatetime date
     );
+    
 --시퀀스 생성
 create sequence p_mem_num nocycle nocache;
 
