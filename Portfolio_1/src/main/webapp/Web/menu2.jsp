@@ -98,7 +98,7 @@
 				</div>
 			
 				<div class="offset-xl-4 offset-xl-2">
-					<div class="col mx-4 d-none d-xl-block d-lg-block"></div>
+					<div class="col mx-4 d-none d-xl-block"></div>
 				</div>
 			</div>
 		

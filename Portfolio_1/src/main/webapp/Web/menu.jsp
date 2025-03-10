@@ -100,7 +100,7 @@
 				</div>
 
 				<div class="offset-xl-4 offset-xl-2">
-					<div class="col mx-4 d-none d-xl-block d-lg-block"></div>
+					<div class="col mx-4 d-none d-xl-block"></div>
 				</div>
 			</div>
 
@@ -153,6 +153,7 @@
 						class="nav-link ml-n3" href="./new.jsp">최신뉴스</a>
 			</nav>
 			<nav id="community" class="nav ml-auto ">
+			
 				<a
 					class="d-none d-xl-block d-lg-block d-md-block nav-link border mr-2"
 					href="addReport.jsp">제보</a> <a
@@ -160,7 +161,7 @@
 					href="Reports.jsp">게시판</a>
 			</nav>
 			<div
-				class="offset-xl-1 offset-xl-1 mr-5 d-xl-block d-lg-block d-md-none ">
+				class="offset-xl-1 mr-5 d-xl-block  d-md-none ">
 				<div class="col mx-5 d-none d-xl-block"></div>
 			</div>
 		</div>
